@@ -8,19 +8,19 @@
           &emsp;&emsp;Inbox
         </span>
       </a>
-      <a class="mdl-navigation__link" href="">    
+      <a class="mdl-navigation__link show-dialog">    
         <span class="mdl-list__item-primary-content">
         <i class="material-icons mdl-list__item-icon">delete_forever</i>
         &emsp;&emsp;Trash
         </span>
       </a>
-      <a class="mdl-navigation__link" href="">    
+      <a class="mdl-navigation__link show-dialog">    
         <span class="mdl-list__item-primary-content">
         <i class="material-icons mdl-list__item-icon">send</i>
         &emsp;&emsp;Sent
         </span>
       </a>
-      <a class="mdl-navigation__link" href="">    
+      <a class="mdl-navigation__link show-dialog">    
         <span class="mdl-list__item-primary-content">
         <i class="material-icons mdl-list__item-icon">receipt</i>
         &emsp;&emsp;Drafts
