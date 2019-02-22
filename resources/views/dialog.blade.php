@@ -1,7 +1,7 @@
 
   <dialog class="mdl-dialog">
     <form action="/checkPassword">
-      @csrf 
+    {{ csrf_field() }}
       <h4 class="mdl-dialog__title">Error</h4>
       <div class="mdl-dialog__content">
         <p>

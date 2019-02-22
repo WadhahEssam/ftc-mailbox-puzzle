@@ -19,24 +19,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td class="mdl-data-table__cell--non-numeric">1</td>  
-        <td class="mdl-data-table__cell--non-numeric">Message #1</td>
-        <td style="color:#940b0b" class="mdl-data-table__cell--non-numeric show-dialog">Re-enter The password to see the content</td>
-        <td class="mdl-data-table__cell--non-numeric">Sat 9:45 PM</td>
-      </tr>
-      <tr>
-        <td class="mdl-data-table__cell--non-numeric">2</td>  
-        <td class="mdl-data-table__cell--non-numeric">Message #2</td>
-        <td style="color:#940b0b" class="mdl-data-table__cell--non-numeric show-dialog">Re-enter The password to see the content</td>
-        <td class="mdl-data-table__cell--non-numeric">Fri 5:30 PM</td>
-      </tr>
-      <tr>
-        <td class="mdl-data-table__cell--non-numeric">3</td>  
-        <td class="mdl-data-table__cell--non-numeric">Message #3</td>
-        <td style="color:#940b0b" class="mdl-data-table__cell--non-numeric show-dialog">Re-enter The password to see the content</td>
-        <td class="mdl-data-table__cell--non-numeric">Fri 7:16 AM</td>
-      </tr>
+      @if (isset($messages))
+        @for ( $i = 0; $i < count($messages); $i++ )
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['id']}}</td>  
+            <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['title']}}</td>
+            <td class="mdl-data-table__cell--non-numeric show-dialog">**Content is hidden**  <a class="show-dialog">Re-enter The password to see the content</span></a>
+            <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['date']}}</td>
+          </tr>
+        @endfor
+      @endif
     </tbody>
   </table>
 </div>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/mailbox.css">
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Document</title>
 </head>
 <body>
