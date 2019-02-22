@@ -13,7 +13,6 @@
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--fixed-header">
-  @include('dialog')
   @include('navbar')
   @include('drawer')
   <main class="mdl-layout__content">
@@ -21,29 +20,14 @@
       @include('pageContent')
     </div>
 
-    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fixed-button show-dialog">
-      <i class="material-icons">add</i>
+    <button  class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fixed-button show-dialog">
+      <i id="tt4" class="material-icons">add</i>
     </button>
   </main>
 </div>
 
 </body>
-<script>
-      var dialog = document.querySelector('dialog');
-      var showDialogButton = document.querySelectorAll('.show-dialog');
-      for(var i = 0; i < showDialogButton.length; i++) {
-        if (! dialog.showModal) {
-          dialogPolyfill.registerDialog(dialog);
-        }
+@include('dialog')
 
-        showDialogButton[i].addEventListener('click', function() {
-          dialog.showModal();
-        });
-
-        dialog.querySelector('.close').addEventListener('click', function() {
-          dialog.close();
-        });
-      }
-  </script>
   
 </html>

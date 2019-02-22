@@ -11,6 +11,13 @@
 |
 */
 
+use Illuminate\Http\Request;
+
+
 Route::get('/', function () {
     return view('mailbox');
+}); 
+
+Route::get('/checkPassword', function (Request $request) {
+    return view('mailbox', ['password'=>$request->password]);
 });

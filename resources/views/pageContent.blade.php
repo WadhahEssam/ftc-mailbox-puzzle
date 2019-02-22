@@ -1,5 +1,13 @@
 
 
+@if(isset($password))
+  <div class="error-message">
+    <div class="error-message-box">
+      <p>Sorry, {{$password}} is not a correct password</p>
+    </div>
+  </div>
+@endif
+
 <div style="padding: 37px;">
   <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
     <thead>

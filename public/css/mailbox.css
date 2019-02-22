@@ -7,3 +7,20 @@
 .show-dialog:hover {
   cursor: pointer;
 }
+
+.error-message {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  padding-top: 22PX;
+}
+
+.error-message-box {
+  background: #985353;
+  border-radius: 5px;
+  height: 34px;
+  padding-top: 9px;
+  margin-bottom: -8px;
+  color: white;
+  margin: 0px 29%;
+}
