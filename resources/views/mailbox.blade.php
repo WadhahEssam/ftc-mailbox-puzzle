@@ -29,6 +29,5 @@
 
 </body>
 @include('dialog')
-
-  
+@include('restorePasswordDialog')
 </html>

@@ -2,9 +2,17 @@
 
 @if(isset($password))
   <div class="error-message">
-    <div class="error-message-box">
-      <p>Sorry, {{$password}} is not a correct password</p>
-    </div>
+      <span style="background: #c18282;color: white;" class="mdl-chip mdl-chip--contact">
+        <span style="padding-left:10px" class="mdl-chip__text">Sorry, {{$password}} is not a correct password</span>
+      </span>
+  </div>
+@endif
+
+@if(isset($answer))
+  <div class="error-message">
+      <span style="background: #c18282;color: white;" class="mdl-chip mdl-chip--contact">
+        <span style="padding-left:10px" class="mdl-chip__text">We couldn't authanticate your account, {{$answer}} is not the correct answer</span>
+      </span>
   </div>
 @endif
 
@@ -35,9 +43,8 @@
 
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">FTC Mail</div>
     <ul class="mdl-mini-footer__link-list">
-      <li><a href="#">❤️ Developed by Wadhah Essam from FTC ❤️</li>
+      <li><a class="footer-text" href="#">Developed by Wadhah Essam from FTC ❤️</li>
     </ul>
   </div>
 </footer>

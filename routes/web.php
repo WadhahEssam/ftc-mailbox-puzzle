@@ -15,17 +15,22 @@ use Illuminate\Http\Request;
 
 Route::get('/', function () {
     $inbox = new Inbox;
-    return view('mailbox', ['messages'=>$inbox->getAllMessages()]);
+    return view('mailbox', ['messages'=>$inbox->getAllMessages(), 'errorNo'=>generateRandomString(10), 'restoreQuestion'=>$inbox->getRandomQuestion()]);
 }); 
 
 Route::get('/checkPassword', function (Request $request) {
     $inbox = new Inbox;
-    return view('mailbox', ['messages'=>$inbox->getAllMessages(), 'password'=>$request->password]);
+    return view('mailbox', ['messages'=>$inbox->getAllMessages(), 'errorNo'=>generateRandomString(10), 'restoreQuestion'=>$inbox->getRandomQuestion(), 'password'=>$request->password]);
 });
 
 Route::get('/search', function (Request $request) {
     $inbox = new Inbox;
-    return view('mailbox', ['messages'=>$inbox->getMessagesWith($request->string)]);
+    return view('mailbox', ['messages'=>$inbox->getMessagesWith($request->string), 'errorNo'=>generateRandomString(10), 'restoreQuestion'=>$inbox->getRandomQuestion()]);
+});
+
+Route::get('/restorePassword', function (Request $request) {
+    $inbox = new Inbox;
+    return view('mailbox', ['messages'=>$inbox->getAllMessages(), 'errorNo'=>generateRandomString(10), 'restoreQuestion'=>$inbox->getRandomQuestion(), 'answer'=>$request->answer]);
 });
 
 Route::get('/test', function () {
@@ -36,6 +41,7 @@ Route::get('/test', function () {
 
 class Inbox {
     public $messages;
+    public $restorePasswordQuestions;
     function __construct() {
         $wrongMessage = 'This is not the message you are looking for';
         $this->messages = [
@@ -53,6 +59,13 @@ class Inbox {
             ['id'=>'12', 'title'=>'Message #12', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
             ['id'=>'13', 'title'=>'Message #13', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
         ];
+
+        $this->restorePasswordQuestions = [
+            'When did you first get your diapers ?',
+            'how many fishes exists in the club ?',
+            'how do you see your self after 5 years ?',
+            'who is your uncle ?'
+        ];
     }
 
     public function getMessagesWith($string) {
@@ -68,4 +81,18 @@ class Inbox {
     public function getAllMessages() {
         return $this->messages;
     }
+
+    public function getRandomQuestion() {
+        return $this->restorePasswordQuestions[rand(0, count($this->restorePasswordQuestions)-1)];
+    }
+}
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789ABCDEF';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
 }

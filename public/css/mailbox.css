@@ -10,9 +10,8 @@
 
 .error-message {
   text-align: center;
-  vertical-align: middle;
   line-height: 90px;
-  padding-top: 22PX;
+  margin-bottom: -30px;
 }
 
 .error-message-box {
@@ -25,4 +24,8 @@
   margin: 0px 29%;
   position: relative;
   top: 8px;
+}
+
+.footer-text {
+  font-family: monospace;
 }
