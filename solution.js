@@ -1,15 +1,15 @@
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const browser = await puppeteer.launch({headless: true});
+  const browser = await puppeteer.launch({headless: false});
   const page = await browser.newPage();
   await page.setViewport({height: 1080, width: 1920});
-  var link = 'http://127.0.0.1:8000';
+  var link = 'https://ftc-mailbox-puzzle.herokuapp.com';
 
   await page.goto(link);
   
   var charsExcept = "BCDFHIJKLNOPQRTUVWXYZabcdefghijklmnopqrstuvwxyz023456789 ";
-  var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789./-, ";
+  var chars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ./-, ";
   var isSolved1 = false;
   var isSolved2 = false;
   var actualWord = '';
