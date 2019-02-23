@@ -42,15 +42,16 @@ class Inbox {
             ['id'=>'1', 'title'=>'Message #1', 'content'=>'visit the link to find the box code goo.gl/alkdjg344', 'date'=>'Sat 11:35 PM'],
             ['id'=>'2', 'title'=>'Message #2', 'content'=>$wrongMessage, 'date'=>'Sat 9:30 AM'],
             ['id'=>'3', 'title'=>'Message #3', 'content'=>$wrongMessage, 'date'=>'Fri 12:12 AM'],
-            ['id'=>'4', 'title'=>'Message #5', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'5', 'title'=>'Message #6', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'6', 'title'=>'Message #7', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'7', 'title'=>'Message #8', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'8', 'title'=>'Message #10', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'9', 'title'=>'Message #9', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'10', 'title'=>'Message #11', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'11', 'title'=>'Message #12', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
-            ['id'=>'12', 'title'=>'Message #13', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'4', 'title'=>'Message #4', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'5', 'title'=>'Message #5', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'6', 'title'=>'Message #6', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'7', 'title'=>'Message #7', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'8', 'title'=>'Message #8', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'9', 'title'=>'Message #10', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'10', 'title'=>'Message #9', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'11', 'title'=>'Message #11', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'12', 'title'=>'Message #12', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
+            ['id'=>'13', 'title'=>'Message #13', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM'],
         ];
     }
 
@@ -60,7 +61,6 @@ class Inbox {
             if (strpos($this->messages[$i]['title'], $string) !== false || strpos($this->messages[$i]['content'], $string) !== false ) {
                 array_push($filteredMessages, $this->messages[$i]);
             }
-
         }
         return $filteredMessages;
     }
