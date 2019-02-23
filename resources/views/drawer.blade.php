@@ -27,7 +27,7 @@
         </span>
       </a>
       <a style="position: absolute; bottom: 20px;" style="color: #516b51" class="mdl-navigation__link show-dialog2">    
-        <span class="mdl-list__item-primary-content">
+        <span style="font-size: 12px" class="mdl-list__item-primary-content">
         <i class="material-icons mdl-list__item-icon">lock_open</i>
         &emsp;&emsp;Restore Password
         </span>

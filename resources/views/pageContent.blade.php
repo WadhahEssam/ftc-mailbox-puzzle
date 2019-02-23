@@ -22,7 +22,7 @@
       <tr>
         <th class="mdl-data-table__cell--non-numeric">ID</th>
         <th class="mdl-data-table__cell--non-numeric">Title</th>
-        <th class="mdl-data-table__cell--non-numeric">Sender</th>
+        <th class="mdl-data-table__cell--non-numeric">From</th>
         <th style="width: 100%" class="mdl-data-table__cell--non-numeric">Content</th>
         <th class="mdl-data-table__cell--non-numeric">Sent at</th>
       </tr>

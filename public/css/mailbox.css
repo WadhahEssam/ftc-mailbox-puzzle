@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.show-dialog2:hover {
+  cursor: pointer;
+}
+
 .error-message {
   text-align: center;
   line-height: 90px;
