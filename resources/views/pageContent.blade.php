@@ -22,6 +22,7 @@
       <tr>
         <th class="mdl-data-table__cell--non-numeric">ID</th>
         <th class="mdl-data-table__cell--non-numeric">Title</th>
+        <th class="mdl-data-table__cell--non-numeric">Sender</th>
         <th style="width: 100%" class="mdl-data-table__cell--non-numeric">Content</th>
         <th class="mdl-data-table__cell--non-numeric">Sent at</th>
       </tr>
@@ -32,6 +33,11 @@
           <tr>
             <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['id']}}</td>  
             <td id="{{$messages[$i]['title']}}" class="mdl-data-table__cell--non-numeric">{{$messages[$i]['title']}}</td>
+            <td class="mdl-data-table__cell--non-numeric">
+              <span class="mdl-chip mdl-chip--contact">
+                <span style="padding-left: 10px" class="mdl-chip__text">{{$messages[$i]['sender']}}</span>
+              </span>  
+            </td>
             <td class="mdl-data-table__cell--non-numeric show-dialog">**Content is hidden**  <a class="show-dialog">Re-enter The password to see the content</span></a>
             <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['date']}}</td>
           </tr>
