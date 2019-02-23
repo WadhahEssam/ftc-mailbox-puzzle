@@ -11,7 +11,6 @@ const puppeteer = require('puppeteer');
   var charsExcept = "BCDFHIJKLNOPQRTUVWXYZabcdefghijklmnopqrstuvwxyz023456789 ";
   var chars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ./-, ";
   var isSolved1 = false;
-  var isSolved2 = false;
   var actualWord = '';
   var numberOfSteps = 0;
 
