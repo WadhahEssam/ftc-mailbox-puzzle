@@ -23,7 +23,7 @@
         @for ( $i = 0; $i < count($messages); $i++ )
           <tr>
             <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['id']}}</td>  
-            <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['title']}}</td>
+            <td id="{{$messages[$i]['title']}}" class="mdl-data-table__cell--non-numeric">{{$messages[$i]['title']}}</td>
             <td class="mdl-data-table__cell--non-numeric show-dialog">**Content is hidden**  <a class="show-dialog">Re-enter The password to see the content</span></a>
             <td class="mdl-data-table__cell--non-numeric">{{$messages[$i]['date']}}</td>
           </tr>

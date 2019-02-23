@@ -16,6 +16,7 @@
       </label>
       <div class="mdl-textfield__expandable-holder">
         <form action="/search">
+          {{ csrf_field() }}
           <input class="mdl-textfield__input" type="text" name="string"
                 id="fixed-header-drawer-exp">
         </form>

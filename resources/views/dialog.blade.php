@@ -5,7 +5,7 @@
       <h4 class="mdl-dialog__title">Error</h4>
       <div class="mdl-dialog__content">
         <p>
-          Re-enter your password
+          Due to inactivity please re-enter your password
         </p>
           <div class="mdl-textfield mdl-js-textfield">
             <input name="password" class="mdl-textfield__input" type="text" id="sample1">
