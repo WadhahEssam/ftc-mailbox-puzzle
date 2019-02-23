@@ -13,9 +13,11 @@ const puppeteer = require('puppeteer');
   var isSolved1 = false;
   var isSolved2 = false;
   var actualWord = '';
+  var numberOfSteps = 0;
 
   // checking the first letter 
   while (!isSolved1) {
+    numberOfSteps++;
     var randomChar = getRandomCharExpect();
     await page.goto(`${link}/search?string=${actualWord+randomChar}`);
     if (await checkString('Message #1', page) == true) {
@@ -27,6 +29,7 @@ const puppeteer = require('puppeteer');
 
   // going forward
   for(var i = 0; i < chars.length; i++) {
+    numberOfSteps++;
     await page.goto(`${link}/search?string=${actualWord+chars.charAt(i)}`);
     if (await checkString('Message #1', page)) {
       if(chars.charAt(i) == ' ') {
@@ -42,6 +45,7 @@ const puppeteer = require('puppeteer');
 
   // going backwards
   for(var i = 0; i < chars.length; i++) {
+    numberOfSteps++;
     await page.goto(`${link}/search?string=${chars.charAt(i)+actualWord}`);
     if (await checkString('Message #1', page)) {
       if(chars.charAt(i) == ' ') {
@@ -56,7 +60,7 @@ const puppeteer = require('puppeteer');
   }
 
 
-  console.log(`FOUND IT, THE CONTENT IS [ ${actualWord} ]`)
+  console.log(`FOUND IT, THE CONTENT IS [ ${actualWord} ], IT TOOK ${numberOfSteps} STEPS TO FIND IT`)
   await page.screenshot({path: 'files/test.png'});
   await page.close()
   await browser.close();
