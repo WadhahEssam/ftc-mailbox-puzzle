@@ -1,14 +1,14 @@
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const browser = await puppeteer.launch({headless: false});
+  const browser = await puppeteer.launch({headless: true});
   const page = await browser.newPage();
   await page.setViewport({height: 1080, width: 1920});
   var link = 'https://ftc-mailbox-puzzle.herokuapp.com';
 
   await page.goto(link);
   
-  var charsExcept = "BCDFHIJKLNOPQRTUVWXYZabcdefghijklmnopqrstuvwxyz023456789 ";
+  var charsExcept = "BCDFHJKLOPQUVWXYZbdeghjklnoqsuvwxyz023456789 ";
   var chars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ./-, ";
   var isSolved1 = false;
   var actualWord = '';
@@ -82,7 +82,7 @@ function getRandomNumberUntil(number) {
 
 function getRandomCharExpect() {
   var text = "";
-  var possible = "BCDFHIJKLNOPQRTUVWXYZbcdfhijklnopqrtuvwxyz023456789";
+  var possible = "BCDFHJKLOPQUVWXYZbdehjklnoqsuvwxyz023456789";
   text += possible.charAt(Math.floor(Math.random() * possible.length));
   return text;
 }
