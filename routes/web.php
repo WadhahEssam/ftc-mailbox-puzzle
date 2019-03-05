@@ -45,19 +45,19 @@ class Inbox {
     function __construct() {
         $wrongMessage = 'This is not the message you are looking for';
         $this->messages = [
-            ['id'=>'1', 'title'=>'Message #1', 'content'=>'visit the link to find the box code goo.gl/alkdjg344', 'date'=>'Sat 11:35 PM', 'sender'=>'important@ftc.com'],
+            ['id'=>'1', 'title'=>'Message #1', 'content'=>'congrats you solved the challenge. send an email to 435108270@student.ksu.edu.sa with your information', 'date'=>'Sat 11:35 PM', 'sender'=>'important@ftc.com'],
             ['id'=>'2', 'title'=>'Message #2', 'content'=>$wrongMessage, 'date'=>'Sat 9:30 AM', 'sender'=>'saleh@ftc.com'],
             ['id'=>'3', 'title'=>'Message #3', 'content'=>$wrongMessage, 'date'=>'Fri 12:12 AM', 'sender'=>'mohammed@ftc.com'],
-            ['id'=>'4', 'title'=>'Message #4', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'osama@ftc.com'],
+            ['id'=>'4', 'title'=>'Message #4', 'content'=>$wrongMessage, 'date'=>'Tue 9:18 PM', 'sender'=>'osama@ftc.com'],
             ['id'=>'5', 'title'=>'Message #5', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'wadah@ftc.com'],
-            ['id'=>'6', 'title'=>'Message #6', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'ali@ftc.com'],
+            ['id'=>'6', 'title'=>'Message #6', 'content'=>$wrongMessage, 'date'=>'Wed 9:09 PM', 'sender'=>'ali@ftc.com'],
             ['id'=>'7', 'title'=>'Message #7', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'ferasAKAfares@ftc.com'],
-            ['id'=>'8', 'title'=>'Message #8', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'abdullah@ftc.com'],
+            ['id'=>'8', 'title'=>'Message #8', 'content'=>$wrongMessage, 'date'=>'Fri 2:02 PM', 'sender'=>'abdullah@ftc.com'],
             ['id'=>'9', 'title'=>'Message #10', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'anas@ftc.com'],
-            ['id'=>'10', 'title'=>'Message #9', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'mySetup@ftc.com'],
-            ['id'=>'11', 'title'=>'Message #11', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'someone@ftc.com'],
-            ['id'=>'12', 'title'=>'Message #12', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'luffy@ftc.com'],
-            ['id'=>'13', 'title'=>'Message #13', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'ksu@ftc.com'],
+            ['id'=>'10', 'title'=>'Message #9', 'content'=>$wrongMessage, 'date'=>'Mon 1:39 AM', 'sender'=>'mySetup@ftc.com'],
+            ['id'=>'11', 'title'=>'Message #11', 'content'=>$wrongMessage, 'date'=>'Mon 10:18 PM', 'sender'=>'someone@ftc.com'],
+            ['id'=>'12', 'title'=>'Message #12', 'content'=>$wrongMessage, 'date'=>'Sun 3:03:18 PM', 'sender'=>'luffy@ftc.com'],
+            ['id'=>'13', 'title'=>'Message #13', 'content'=>$wrongMessage, 'date'=>'Tue 11:11 PM', 'sender'=>'ksu@ftc.com'],
         ];
 
         $this->restorePasswordQuestions = [
