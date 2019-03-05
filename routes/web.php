@@ -61,10 +61,10 @@ class Inbox {
         ];
 
         $this->restorePasswordQuestions = [
-            'When did you first get your diapers ?',
-            'how many fishes exists in the club ?',
+            'are you Feras ?',
+            'what was you bext movie ?',
             'how do you see your self after 5 years ?',
-            'who is your uncle ?'
+            'what was you best food when you were a child?'
         ];
     }
 
