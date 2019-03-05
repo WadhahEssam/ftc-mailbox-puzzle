@@ -56,7 +56,7 @@ class Inbox {
             ['id'=>'9', 'title'=>'Message #10', 'content'=>$wrongMessage, 'date'=>'Tue 10:18 PM', 'sender'=>'anas@ftc.com'],
             ['id'=>'10', 'title'=>'Message #9', 'content'=>$wrongMessage, 'date'=>'Mon 1:39 AM', 'sender'=>'mySetup@ftc.com'],
             ['id'=>'11', 'title'=>'Message #11', 'content'=>$wrongMessage, 'date'=>'Mon 10:18 PM', 'sender'=>'someone@ftc.com'],
-            ['id'=>'12', 'title'=>'Message #12', 'content'=>$wrongMessage, 'date'=>'Sun 3:03:18 PM', 'sender'=>'luffy@ftc.com'],
+            ['id'=>'12', 'title'=>'Message #12', 'content'=>$wrongMessage, 'date'=>'Sun 3:18 PM', 'sender'=>'luffy@ftc.com'],
             ['id'=>'13', 'title'=>'Message #13', 'content'=>$wrongMessage, 'date'=>'Tue 11:11 PM', 'sender'=>'ksu@ftc.com'],
         ];
 
