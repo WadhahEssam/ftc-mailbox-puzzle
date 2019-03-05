@@ -6,10 +6,12 @@
       <a class="mdl-navigation__link" ></a>
       <a class="mdl-navigation__link" href="/">Mailbox</a>
       <a class="mdl-navigation__link show-dialog">Settings</a>
+      <a class="mdl-navigation__link show-dialog">تم حل التحدي من ثامر الداوود</a>
     </nav>
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                 mdl-textfield--floating-label mdl-textfield--align-right">
+
       <label class="mdl-button mdl-js-button mdl-button--icon"
             for="fixed-header-drawer-exp">
         <i class="material-icons">search</i>
