@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/css/mailbox.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Document</title>
+  <title>MailBox Puzzle</title>
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
