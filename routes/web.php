@@ -63,8 +63,8 @@ class Inbox {
         $this->restorePasswordQuestions = [
             'are you Feras ?',
             'what is your best movie ?',
-            'how do you see yourself after 5 years ?',
-            'Feras are you still there ?'
+            'Feras are you still there ?',
+            'I am watching you yousef ?'
         ];
     }
 
