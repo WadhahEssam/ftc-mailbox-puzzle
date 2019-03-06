@@ -7,6 +7,7 @@
       <a class="mdl-navigation__link" href="/">Mailbox</a>
       <a class="mdl-navigation__link show-dialog">Settings</a>
       <a class="mdl-navigation__link show-dialog">تم حل التحدي من ثامر الداوود</a>
+      <a href="https://github.com/WadhahEssam/ftc-mailbox-puzzle" class="mdl-navigation__link">Solution + Github Page</a>
     </nav>
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
