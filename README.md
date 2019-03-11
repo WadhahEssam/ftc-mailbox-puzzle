@@ -19,6 +19,7 @@ Three people solved this challgend
 
 ## Inspiration 
 if you want to try and solve it yourself, do not watch the video
+
 This challenge is inspired by this vedio https://www.youtube.com/watch?v=rE6q2YsYfp8&t=559s, hosted by Haseeb Qureshi 
 
 ## Solution 
